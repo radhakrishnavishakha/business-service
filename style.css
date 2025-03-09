@@ -1,0 +1,237 @@
+header {
+    background-color: #663399; /* Purple background */
+    color: #eae9ec;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows elements to wrap instead of going outside */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows menu items to wrap on small screens */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li.active a {
+    color: #949191;
+    font-weight: bold;
+}
+
+/* Ensure Login & Signup Stay Inside the Header */
+.account {
+    display: flex;
+    
+    gap: 10px; /* Adds space between Login and Signup */
+    margin-right: 1rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+.account a {
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #8a2ce8; /* Purple color */
+    color: white;
+    box-shadow: 0 2px 10px #8a2ce8;
+}
+
+/* Make Layout Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .account {
+        margin-top: 10px; /* Adds space between menu and login/signup */
+        justify-content: center; /* Centers the buttons */
+    }
+
+    .account a {
+        padding: 8px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: #8a2ce8; /* Purple color */
+        color: white;
+        box-shadow: 0 2px 10px #8a2ce8;
+    }
+
+    .account a:hover {
+        background-color: #6b1cbf;
+    }
+}
+
+
+.services {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.services h2 {
+    margin-bottom: 1rem;
+    color: #663399;
+    /* Purple text */
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #fff;
+
+    /* White service items */
+    box-shadow: 0 2px 10px #8a2ce8;
+}
+
+.service-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #663399;
+}
+
+.service-item h3 {
+    margin-top: 1rem;
+    color: #663399;
+    /* Purple text */
+}
+/* Footer Styles */
+footer {
+    /*background-color: #663399; /* Dark background for the footer */
+    color: #a5a5a5;
+    padding: 20px 0; /* Padding top and bottom */
+    font-family: sans-serif; /* Use a clean font */
+}
+
+.footer-content {
+    background-color:#663399;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around; /* Distribute columns evenly */
+    max-width: 1500px; /* Set a maximum width for the footer */
+    margin: 0 auto; /* Center the footer content */
+    padding: 20px;
+    box-shadow: 0 2px 20px #8a2ce8;
+}
+
+
+.footer-about, .footer-links, .footer-contact, .footer-social {
+    margin-bottom: 20px; /* Add spacing between columns */
+    flex: 1 1 200px; /* Ensure each column takes up equal space */
+}
+
+.footer-content h3 {
+    color: #eee; /* Slightly lighter color for headings */
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    line-height: 1.6; /* Improve readability */
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social li {
+    margin-bottom: 5px;
+}
+
+.footer-content a {
+    color: #a5a5a5;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #a5a5a5; /* Highlight color on hover */
+}
+
+.footer-bottom {
+    background-color: #663399; /* Slightly darker background for the bottom bar */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 20px #8a2ce8;
+}
+
+/* Social Icons */
+.footer-social ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.footer-social a:hover {
+    background-color: #a5a5a5;
+    color: #333;
+}
+
+.footer-social i {
+    font-size: 16px;
+}
+
+/* Responsive Design - Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact, .footer-social {
+        text-align: center; /* Center text in columns */
+    }
+}
